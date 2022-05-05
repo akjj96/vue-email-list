@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!--  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!--  -->
+    <script
+      src="https://kit.fontawesome.com/976dce7efe.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--  -->
+    <link rel="stylesheet" href="./style.css" />
+    <!--  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--  -->
+    <title>Vue Email List</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="row">
+          <div class="col-12 justify-content-center py-4">
+            <h1>Mailing List</h1>
+          </div>
+          <div class="col-12" v-if="mailingList.length === 10"></div><p v-for="mail in mailingList">{{mail}}</p></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
